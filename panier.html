@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Panier Librairie en ligne</title>
+     <link rel="stylesheet" type="text/css" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Librairie en ligne</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="catalogue.html">Catalogue</a></li>
+                <li><a href="panier.html">Panier</a></li>
+                <li><a href="login.html">Connexion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Votre Panier</h2>
+        <div id="Panier">
+            <ul id="liste-produits">
+                <!-- Les livres ajoutés s'afficheront ici -->
+            </ul>
+            <p><strong>Total :</strong> <span id="Total">0</span> FCFA</p>
+            <button onclick="ValiderCommande()">Valider la commande</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Librairie Saint Paul - Panier</p>
+    </footer>
+
+    <script>
+    function ValiderCommande() {
+        alert('Votre commande a été validée ! Merci pour votre achat.');
+    }
+    </script>
+</body>
+</html>

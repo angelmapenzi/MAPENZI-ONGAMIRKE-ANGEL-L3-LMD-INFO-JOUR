@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Catalogue librairie en ligne</title>
+      <link rel="stylesheet" type="text/css" href="styles/styles.css">
+</head>
+<body>
+    <header>
+      <h1>Librairie en ligne</h1>
+      <nav>
+            <ul>
+                  <li><a href="index.html">Accueil</a></li>
+                  <li><a href="apropos.html">A propos</a></li>
+                  <li><a href="catalogue.html" class="active">Catalogue</a></li>
+                  <li><a href="panier.html">Panier</a></li>
+                  <li><a href="login.html">Connexion</a></li>
+            </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Catalogue des livres</h2>
+      <div class="livres">
+            <h3>Le Petit Prince</h3>
+            <p>Auteur: Antoine de Saint-Exupéry</p>
+            <p>Prix: 5000 FCFA</p>
+            <button onclick="AjouterAupanier('Le Petit Prince', 5000)">Ajouter au panier</button>
+      </div>
+      <div class="livres">
+            <h3>Les Miracles</h3>
+            <p>Auteur: Victor Hugo</p>
+            <p>Prix: 6000 FCFA</p>
+            <button onclick="AjouterAupanier('Les Miracles', 6000)">Ajouter au panier</button>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 - Librairie Saint Paul - Catalogue</p>
+    </footer>
+
+    <!-- Petit script si besoin -->
+    <script>
+    function AjouterAupanier(titre, prix) {
+        alert(titre + " ajouté au panier pour " + prix + " FCFA !");
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,364 @@
+/* Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style général */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* H2 de bienvenue */
+h2 {
+    color: #4A148C;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Paragraphe de chargement */
+p {
+    color: #333;
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* Grand titre H1 */
+h1 {
+    color: #D32F2F;
+    font-size: 2.5rem;
+    margin: 30px 0 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Deuxième paragraphe */
+p + p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Animation d’apparition */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+/* Header */
+header {
+    background-color: #6a1b9a;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Titre dans le header */
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: #6a1b9a;
+}
+
+/* Main principal */
+main {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Section d'introduction */
+.intro h2 {
+    font-size: 2rem;
+    color: #4A148C;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.1rem;
+    color: #555;
+    margin: 20px 0;
+}
+
+.intro img {
+    width: 250px;
+    height: auto;
+    margin: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.intro img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #6a1b9a;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+/* Bouton formulaire */
+input[type="submit"] {
+    background-color: #4A148C;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    margin: 30px auto;
+    display: block;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #7b1fa2;
+}
+/* Section À propos */
+.apropos {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.apropos h2 {
+    font-size: 2.2rem;
+    color: #4A148C;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.apropos h3 {
+    font-size: 1.7rem;
+    color: #6a1b9a;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.apropos p {
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Style pour les listes à puces dans apropos */
+.apropos ul {
+    margin-left: 30px;
+    list-style-type: disc;
+}
+
+.apropos ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Footer spécifique si besoin */
+footer p {
+    font-size: 0.9rem;
+    color: #eee;
+}
+/* Catalogue - Page des livres */
+main h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #4A148C;
+    margin: 40px 0 20px;
+}
+
+.livres {
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    background-color: #f9f9f9;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.livres h3 {
+    font-size: 1.8rem;
+    color: #6a1b9a;
+    margin-bottom: 10px;
+}
+
+.livres p {
+    font-size: 1.1rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+.livres button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #6a1b9a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.livres button:hover {
+    background-color: #4A148C;
+}
+body {
+    
+}
+
+.wrapper {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+    width: 350px;
+}
+
+.wrapper h1 {
+    font-size: 2rem;
+    color: #6a1b9a;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.wrapper p {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.connecter {
+    width: 100%;
+    padding: 12px;
+    background-color: #6a1b9a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.connecter:hover {
+    background-color: #4a148c;
+}
+
+.remember-forget {
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.remember-forget a {
+    color: #6a1b9a;
+    text-decoration: none;
+}
+
+.remember-forget a:hover {
+    text-decoration: underline;
+}
+.livres {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.livres:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #388E3C;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    .wrapper {
+        padding: 10px;
+    }
+
+    main {
+        padding: 20px;
+    }
+}
